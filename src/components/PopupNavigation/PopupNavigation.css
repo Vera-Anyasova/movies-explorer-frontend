@@ -1,0 +1,118 @@
+.popup {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  background: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  right: 0;
+  visibility: hidden;
+  overflow: auto;
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+  z-index: 10;
+}
+
+.popup_opened {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup:hover {
+  cursor: pointer;
+}
+
+.popup__container {
+  width: 520px;
+  min-height: 1024px;
+  position: relative;
+  background: #fff;
+}
+
+.popup__button {
+  width: 22px;
+  height: 22px;
+  background: url(../../images/btn-close.svg) center no-repeat;
+  background-size: 32px 32px;
+  position: absolute;
+  top: 22.44px;
+  right: 22.44px;
+  z-index: 1;
+  border: 0;
+  padding: 0;
+}
+
+.popup__button:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.popup__menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 159px;
+}
+
+.popup__link {
+  font-size: 18px;
+  line-height: 1.22;
+  font-weight: 500;
+  color: #000;
+  text-decoration: none;
+  padding: 0;
+  margin: 0 auto 28px;
+}
+
+.popup__link:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.popup__link_movies {
+  box-sizing: border-box;
+  border-bottom: 2px solid #000;
+  padding-bottom: 4px;
+  margin-bottom: 22px;
+}
+
+.popup__link_movies:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.popup__link-btn {
+  margin-top: 593px;
+  text-decoration: none;
+}
+
+.popup__link-btn:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 715px) {
+  .popup__container {
+    min-height: 780px;
+    width: 320px;
+  }
+
+  .popup__menu {
+    margin-top: 144px;
+  }
+
+  .popup__link {
+    margin-bottom: 24px;
+  }
+
+  .popup__link_movies {
+    margin-bottom: 17px;
+    padding-bottom: 7px;
+  }
+
+  .popup__link-btn {
+    margin-top: 420px;
+  }
+}
