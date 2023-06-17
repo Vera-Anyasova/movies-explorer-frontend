@@ -6,6 +6,7 @@ function Authorization({
   name,
   nameUser,
   email,
+  password,
   title,
   textButton,
   text,
@@ -37,8 +38,8 @@ function Authorization({
           id="name-input"
           name="name"
           type="text"
-          minlength="2"
-          maxlength="30"
+          minLength="2"
+          maxLength="30"
           placeholder={nameUser}
           required
         />
@@ -73,7 +74,7 @@ function Authorization({
           id="password-input"
           name="password"
           type="password"
-          placeholder=""
+          placeholder={password}
           required
         />
         <span

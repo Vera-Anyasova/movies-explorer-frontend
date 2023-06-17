@@ -58,6 +58,10 @@
   position: relative;
 }
 
+.authorization__input_profile::placeholder {
+  color: #000000;
+}
+
 .authorization__input_profile-email {
   border-bottom: 0px;
 }

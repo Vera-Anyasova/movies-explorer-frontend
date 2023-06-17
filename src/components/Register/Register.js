@@ -8,6 +8,9 @@ function Register() {
     <Authorization
       name="register"
       title="Добро пожаловать!"
+      nameUser="Имя"
+      email="E-mail"
+      password="Пароль"
       textButton="Зарегистрироваться"
       text="Уже зарегистрированы?"
       pathEdit=""

@@ -8,6 +8,8 @@ function Login() {
     <Authorization
       name="login"
       title="Рады видеть!"
+      email="E-mail"
+      password="Пароль"
       textButton="Войти"
       text="Ещё не зарегистрированы?"
       pathEdit="/profile"

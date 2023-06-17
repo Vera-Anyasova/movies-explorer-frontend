@@ -10,6 +10,7 @@
 
 .header__logo_authorization {
   margin-bottom: 40px;
+  position: static;
 }
 
 .authorization__title {
@@ -52,6 +53,10 @@
   padding: 15px 15px;
   margin: 0 0 20px 0;
   position: relative;
+}
+
+.authorization__input:focus {
+  outline: 1px solid #2be080;
 }
 
 .authorization__item-error {
@@ -124,7 +129,7 @@
 }
 
 .authorization__input::placeholder {
-  color: #000000;
+  color: #e1e1e1;
 }
 
 @media screen and (max-width: 984px) {

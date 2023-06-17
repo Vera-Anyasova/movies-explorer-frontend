@@ -38,6 +38,10 @@
   opacity: 0.8;
 }
 
+.searchForm__input:focus {
+  outline: 1px solid #2be080;
+}
+
 .searchForm__button {
   background-image: url(../../../images/find.svg);
   display: block;

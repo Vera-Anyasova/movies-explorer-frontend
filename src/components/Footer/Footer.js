@@ -16,9 +16,23 @@ function Footer() {
         </h2>
         <div className="footer__item">
           <p className="footer__copyright">© 2023</p>
-          <div className="footer__places">
-            <span className="footer__place">Яндекс.Практикум</span>
-            <span className="footer__place">Github</span>
+          <div className="footer__links">
+            <a
+              href="https://practicum.yandex.ru/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="footer__link"
+            >
+              Яндекс.Практикум
+            </a>
+            <a
+              href="https://github.com/Vera-Anyasova"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="footer__link"
+            >
+              Github
+            </a>
           </div>
         </div>
       </footer>

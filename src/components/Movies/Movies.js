@@ -7,11 +7,11 @@ import "../Movies/Movies.css";
 
 function Movies() {
   return (
-    <div className="movies">
+    <main className="content content__movies">
       <FilterCheckbox></FilterCheckbox>
       <MoviesCardList></MoviesCardList>
       <MoviesAddition></MoviesAddition>
-    </div>
+    </main>
   );
 }
 

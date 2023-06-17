@@ -20,7 +20,14 @@ function AboutMe() {
             студентом Яндекс.Практикума и обучаюсь по программе
             «Веб-разработчик».
           </p>
-          <span className="aboutMe__tech">Github</span>
+          <a
+            href="https://github.com/Vera-Anyasova"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="aboutMe__link"
+          >
+            Github
+          </a>
         </div>
         <div className="aboutMe__photo"></div>
       </div>

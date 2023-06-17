@@ -48,11 +48,18 @@
   margin: 0;
 }
 
-.aboutMe__tech {
+.aboutMe__link {
+  color: #000;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.21;
+  text-decoration: none;
   padding: 0;
+}
+
+.aboutMe__link:hover {
+  opacity: 0.7;
+  cursor: pointer;
 }
 
 .aboutMe__photo {

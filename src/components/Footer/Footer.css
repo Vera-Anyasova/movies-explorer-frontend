@@ -39,19 +39,26 @@
   padding: 0;
 }
 
-.footer__places {
+.footer__links {
   padding: 0;
   margin: 0;
 }
 
-.footer__place {
+.footer__link:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.footer__link {
+  color: #000;
   font-size: 13px;
   line-height: 1.23;
+  text-decoration: none;
   padding: 0 20px 0 0;
   margin: 0;
 }
 
-.footer__place:last-of-type {
+.footer__link:last-of-type {
   padding: 0;
 }
 
@@ -81,7 +88,7 @@
     align-items: center;
   }
 
-  .footer__places {
+  .footer__links {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -89,7 +96,7 @@
     margin-bottom: 30px;
   }
 
-  .footer__place {
+  .footer__link {
     font-size: 12px;
     line-height: 1.25;
     padding: 0 0 12px;
