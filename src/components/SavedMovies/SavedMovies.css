@@ -1,0 +1,22 @@
+.content__savedMovies {
+  color: #fff;
+}
+
+.moviesAddition-saved {
+  padding-top: 60px;
+}
+
+.moviesAddition__element-saved {
+  display: none;
+}
+
+.element__button_saved {
+  width: 16px;
+  height: 16px;
+  background: url(../../images/btn-delete-movie.svg) no-repeat center/cover;
+  margin: 0;
+}
+
+.element__button_saved:focus {
+  display: none;
+}
