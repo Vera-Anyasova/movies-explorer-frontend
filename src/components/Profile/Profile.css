@@ -27,14 +27,14 @@
   padding: 0;
 }
 
-.authorization__field_profile-name {
+.authorization__profile-name {
   position: absolute;
   top: 4px;
   left: 0;
   z-index: 1;
 }
 
-.authorization__field_profile-email {
+.authorization__profile-email {
   position: absolute;
   top: 55px;
   left: 0;
@@ -58,8 +58,8 @@
   position: relative;
 }
 
-.authorization__input_profile::placeholder {
-  color: #000000;
+.authorization__input_profile:focus {
+  outline: 1px solid #2be080;
 }
 
 .authorization__input_profile-email {
@@ -70,8 +70,16 @@
   display: none;
 }
 
-.authorization__button_profile {
-  display: none;
+.authorization__error_profile-name {
+  top: 35px;
+}
+
+.authorization__error_profile-email {
+  top: 80px;
+}
+
+.authorization__button-profile {
+  margin-top: 0;
 }
 
 .authorization__item_profile {
@@ -95,19 +103,28 @@
 
 .authorization__link_profile:hover {
   opacity: 0.7;
+  cursor: pointer;
 }
 
-.authorization__link_profile-edit {
+.authorization__button-edit {
   font-size: 13px;
   line-height: 1.23;
+  font-weight: 500;
   color: #000;
   padding: 0 0 16px 0;
   align-items: center;
   margin: 0 auto;
+  border: 0;
+  background: #fff;
 }
 
-.authorization__link_profile-edit:hover {
+.authorization__button-edit:hover {
   opacity: 0.7;
+  cursor: pointer;
+}
+
+.authorization__button-edit_disabled {
+  display: none;
 }
 
 @media screen and (max-width: 984px) {

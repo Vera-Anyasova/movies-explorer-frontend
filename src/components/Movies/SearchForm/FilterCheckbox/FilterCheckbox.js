@@ -3,9 +3,26 @@ import SearchForm from "../SearchForm";
 
 import "../FilterCheckbox/FilterCheckbox.css";
 
-function FilterCheckbox() {
+function FilterCheckbox({
+  isChecked,
+  setIsChecked,
+  search,
+  setSearch,
+  handleSearchMovies,
+  handleShortMovies,
+}) {
+  function handleChangeCheckbox() {
+    setIsChecked(!isChecked);
+    handleShortMovies();
+  }
+
   return (
-    <SearchForm>
+    <SearchForm
+      handleSearchMovies={handleSearchMovies}
+      search={search}
+      setSearch={setSearch}
+      isChecked={isChecked}
+    >
       <label htmlFor="switch" className="searchForm__label-switch">
         Короткометражки
       </label>
@@ -14,6 +31,8 @@ function FilterCheckbox() {
         className="searchForm__item-switch"
         name="switch"
         id="switch"
+        checked={isChecked}
+        onChange={handleChangeCheckbox}
       />
     </SearchForm>
   );

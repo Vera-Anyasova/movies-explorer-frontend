@@ -25,6 +25,7 @@
   width: 100%;
   margin: 0;
   padding: 0;
+  position: relative;
 }
 
 .authorization__field {
@@ -43,7 +44,7 @@
 .authorization__input {
   width: 100%;
   font-size: 13px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.23;
   box-sizing: border-box;
   border-radius: 8px;
@@ -52,26 +53,20 @@
   background: #f9f9f9;
   padding: 15px 15px;
   margin: 0 0 20px 0;
-  position: relative;
 }
 
 .authorization__input:focus {
   outline: 1px solid #2be080;
+  font-weight: 500;
 }
 
-.authorization__item-error {
-  display: none;
+.authorization__error {
   box-sizing: border-box;
   font-size: 10px;
   line-height: 1.2;
   color: #ff3055;
   position: absolute;
-  top: 56px;
   left: 0;
-}
-
-.authorization__item-error_active {
-  display: inline;
 }
 
 .authorization__button {
@@ -87,9 +82,10 @@
   margin: 159px 0 16px;
   padding: 0;
   border: 0;
+  position: relative;
 }
 
-.authorization__button:disabled {
+.authorization__button_disabled {
   background: #f8f8f8;
   color: #c2c2c2;
 }
@@ -97,6 +93,21 @@
 .authorization__button:hover {
   cursor: pointer;
   opacity: 0.8;
+}
+
+.authorization__button-error {
+  display: none;
+  box-sizing: border-box;
+  font-size: 12px;
+  line-height: 1.2;
+  color: #ff3055;
+  position: absolute;
+  top: -20px;
+  left: 0;
+}
+
+.authorization__button-error_active {
+  display: inline;
 }
 
 .authorization__item {
@@ -161,6 +172,11 @@
   .authorization__button {
     font-size: 12px;
     line-height: 1.25;
+  }
+
+  .authorization__button-error {
+    top: -30px;
+    text-align: left;
   }
 
   .authorization__text {

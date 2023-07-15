@@ -10,6 +10,18 @@
   display: none;
 }
 
+.authorization__error_register-name {
+  top: 73px;
+}
+
+.authorization__error_register-email {
+  top: 161px;
+}
+
+.authorization__error_register-password {
+  top: 249px;
+}
+
 @media screen and (max-width: 715px) {
   .authorization__input_register-password {
     margin-bottom: 0;

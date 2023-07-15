@@ -2,14 +2,15 @@ import React from "react";
 
 import "../MoviesAddition/MoviesAddition.css";
 
-function MoviesAddition({ type }) {
+function MoviesAddition({ type, handleAddMovies }) {
   return (
     <section className={`moviesAddition moviesAddition-${type}`}>
-      <div
-        className={`moviesAddition__element moviesAddition__element-${type}`}
+      <button
+        className={`moviesAddition__button moviesAddition__button-${type}`}
+        onClick={handleAddMovies}
       >
         Ещё
-      </div>
+      </button>
     </section>
   );
 }

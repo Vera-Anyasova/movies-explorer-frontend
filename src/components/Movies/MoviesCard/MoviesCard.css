@@ -29,10 +29,14 @@
 }
 
 .element__title {
+  max-width: 80%;
   font-weight: 500;
   font-size: 13px;
   line-height: 1.23;
   color: #000;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
   margin: 0;
   padding: 0;
 }
@@ -55,8 +59,15 @@
   cursor: pointer;
 }
 
-.element__button:focus {
+.element__button_active {
   background: url(../../../images/btn-active.svg);
+}
+
+.element__button_delete {
+  width: 16px;
+  height: 16px;
+  background: url(../../../images/btn-delete-movie.svg) no-repeat center/cover;
+  margin: 0;
 }
 
 .element__time {

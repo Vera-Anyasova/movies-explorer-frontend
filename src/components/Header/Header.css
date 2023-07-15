@@ -88,7 +88,7 @@
 
 .header__link:hover {
   cursor: pointer;
-  opacity: 0.7;
+  opacity: 0.9;
 }
 
 .header__link_movies {
@@ -96,6 +96,10 @@
   font-size: 13px;
   line-height: 1.38;
   font-weight: 400;
+}
+
+.header__link_movies:focus {
+  font-weight: 500;
 }
 
 .header__link_main {
@@ -107,7 +111,6 @@
 }
 
 .header__link_movies-whole {
-  font-weight: 500;
   margin: 0 16px 0 82px;
 }
 
@@ -188,7 +191,10 @@
     display: flex;
     justify-content: flex-end;
     border: 0;
-    margin: 15px 30px 15px 0;
+    margin-bottom: 15px;
+    position: absolute;
+    top: 15px;
+    right: 30px;
     padding: 0;
   }
 
@@ -270,10 +276,15 @@
   }
 
   .header__link_movies-whole {
+    margin-bottom: 22px;
+  }
+
+  .header__link_movies:hover {
     box-sizing: border-box;
     border-bottom: 2px solid #000;
     padding-bottom: 4px;
-    margin-bottom: 22px;
+    opacity: 0.7;
+    cursor: pointer;
   }
 
   .header__link_movies-saved {
@@ -315,24 +326,11 @@
   }
 
   .header__burger-btn {
-    width: 44px;
-    height: 44px;
-    background: url(../../images/burger-menu.svg) no-repeat;
-    box-sizing: border-box;
-    background-color: transparent;
-    background-size: cover;
-    display: flex;
-    justify-content: flex-end;
-    transition: visibility 0s, opacity 0.3s;
-    border: 0;
-    margin: 15px 30px 15px 0;
-  }
-
-  .header__burger-btn {
     background: url(../../images/burger-small.svg);
     width: 40px;
     height: 43px;
-    margin: 15px 14px 16px 0;
+    right: 14px;
+    margin-bottom: 16px;
   }
 
   .header__btn-close {

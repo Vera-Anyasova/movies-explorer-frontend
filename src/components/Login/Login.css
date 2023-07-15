@@ -10,6 +10,14 @@
   display: none;
 }
 
+.authorization__error_login-email {
+  top: 73px;
+}
+
+.authorization__error_login-password {
+  top: 161px;
+}
+
 @media screen and (max-width: 715px) {
   .authorization__input_login-password {
     margin-bottom: 0;
